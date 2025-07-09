@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traider - Legal Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f5f5f7 0%, #e5e5e7 100%);
+            color: #1d1d1f;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1d1d1f 0%, #434344 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #86868b;
+            font-weight: 400;
+        }
+
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .document-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .document-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+        }
+
+        .document-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .document-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        .document-description {
+            color: #86868b;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+
+        .contact-email {
+            font-size: 1.2rem;
+            color: #007aff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px 0;
+            color: #86868b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+                margin-bottom: 40px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .documents-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .document-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Traider</div>
+            <div class="subtitle">Legal Documentation & Support</div>
+        </div>
+
+        <div class="documents-grid">
+            <a href="PRIVACY_POLICY.md" class="document-card">
+                <span class="document-icon">🔒</span>
+                <div class="document-title">Privacy Policy</div>
+                <div class="document-description">How we collect, use, and share your data to provide personalized investment recommendations and process payments securely.</div>
+            </a>
+
+            <a href="TERMS_OF_SERVICE.md" class="document-card">
+                <span class="document-icon">📋</span>
+                <div class="document-title">Terms of Service</div>
+                <div class="document-description">App usage terms, subscription conditions, and important legal information about using Traider.</div>
+            </a>
+
+            <a href="SUPPORT.md" class="document-card">
+                <span class="document-icon">💎</span>
+                <div class="document-title">Support Guide</div>
+                <div class="document-description">How to subscribe to Traider Premium, manage your subscription, and restore purchases.</div>
+            </a>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-title">Need Help?</div>
+            <a href="mailto:hot.app.contact@gmail.com" class="contact-email">hot.app.contact@gmail.com</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Traider. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html> 
